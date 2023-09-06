@@ -37,7 +37,7 @@ const MapPage = () => {
     setMap(map);
   }, []);
   console.log("maps", map);
-  const onUnmount = React.useCallback(function callback(map) {
+  const onUnmount = React.useCallback(function callback(map: any) {
     setMap(null);
   }, []);
 

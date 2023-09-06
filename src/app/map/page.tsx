@@ -26,7 +26,7 @@ const MapPage = () => {
     googleMapsApiKey: apiKey,
   });
   const [map, setMap] = React.useState(null);
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = React.useCallback(function callback(map: any) {
     // This is just an example of getting and using the map instance!!! don't just blindly copy!
     const bounds = new window.google.maps.LatLngBounds();
     for (const element of markers) {
